@@ -53,8 +53,6 @@ print('*' * 80)
 words = f.read().split()
 print (words)
 
-exit()
-
 word_list = re.sub(r'[^a-zA-Z]', '').word_list
 word_list = ''.join(lst).replace('\n', '').replace("'", '').replace(".", '').split(' ')
 
