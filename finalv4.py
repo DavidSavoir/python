@@ -8,7 +8,7 @@ sys.argv[1] instead of declaration.txt.  It should still work.   The string
 
 import sys
 #f = open(sys.argv[1]).read()
-f = open('declaration2.txt').read()
+f = open('declaration.txt').read()
 
 """
 #f = open("declaration.txt", 'r')
