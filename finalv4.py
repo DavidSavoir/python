@@ -4,13 +4,19 @@
 """In other words, import sys at the top, and then have your script open
 sys.argv[1] instead of declaration.txt.  It should still work.   The string
 'declaration.txt' then need not appear anywhere in the source code."""
+"""
+import os
 
+cwd = os.getcwd()  # Get the current working directory (cwd)
+files = os.listdir(cwd)  # Get all the files in that directory
+print("Files in '%s': %s" % (cwd, files))
+"""
 
 import sys
 #f = open(sys.argv[1]).read()
-f = open('declaration.txt').read()
+#f = open('C:\Users\david.savoir\Documents\GitHub\python\Pythoncode\declaration.txt').read()
+f = open(r'C:\Users\david.savoir\Documents\GitHub\python\Pythoncode\declaration.txt', 'r')
 
-"""
 #f = open("declaration.txt", 'r')
     #f = open('declaration2.txt').read()"""
 
