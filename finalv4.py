@@ -4,13 +4,6 @@
 """In other words, import sys at the top, and then have your script open
 sys.argv[1] instead of declaration.txt.  It should still work.   The string
 'declaration.txt' then need not appear anywhere in the source code."""
-"""
-import os
-
-cwd = os.getcwd()  # Get the current working directory (cwd)
-files = os.listdir(cwd)  # Get all the files in that directory
-print("Files in '%s': %s" % (cwd, files))
-"""
 
 import sys
 #f = open(sys.argv[1]).read()
@@ -57,6 +50,7 @@ lst.append(f)
 print(lst)
 print('*' * 80)
 words = f.read().split()
+print ("***PRINTING WORDS NOW ***")
 print (words)
 
 word_list = re.sub(r'[^a-zA-Z]', '').word_list
